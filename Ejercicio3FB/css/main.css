@@ -20,10 +20,34 @@ body{
 	flex-wrap: wrap;
 }
 
+body > * {
+	margin-top: 20px;
+}
+
+/* DIV MENU AL ACHICAR PANTALLA */
+#menu{
+	display: none;
+	width: 1000px;
+	height: 40px;
+	background-color: gray;
+	color: white;	
+	border-radius: 10px;
+	justify-content: space-around;		
+	align-items: center;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#menu:hover{
+	color: aqua;
+}
+
 /* DIV CONTENEDOR DEL MENU*/
 .principal{
 	display: flex;
-	width: 1000px;
+	width: 800px;
 	height: 40px;
 	background-color: gray;
 	margin-top: 30px;
@@ -116,22 +140,32 @@ body{
 	align-self: flex-end;
 }
 
-/* @media(max-width: 768px){
+@media(max-width: 1024px){
+
+	body > *{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+}
+
+@media(max-width: 468px){
+	.principal{
+		display: none;
+	}
+
+	#menu{
+		display: flex;
+		margin-top: 30px;
+	}
+}
+
+/*
 	.principal{
 		min-height: 200px;
 		flex-wrap: wrap;
 	}
-
-	.principal a > div{
-		display: flex;
-		width: 120px;
-		flex: 1;
-	}
-
-	.principal div{		
-		width: 120px;
-	}
-
+	
 	.principal div>a>div{		
 		width: 40px;
 	}
