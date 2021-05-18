@@ -1,0 +1,718 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+html, body{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('WebSymbols-Regular.otf');
+}
+
+.contenedor-principal{
+    width: 100%;
+    display: flex;
+}
+
+    .contenedor{
+        display: flex;
+        width: 100%;
+        background-color: rgb(243, 146, 55);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .logo{
+            display: flex;
+            color: rgb(236, 236, 212);
+            align-self: center;
+            font-size: 50px; 
+        }
+
+            .logo p{
+               height: 41px;
+               line-height: 46px;
+            }
+
+            .logo p:nth-child(2){
+               background-color: rgb(243, 146, 55);
+               color: black;
+               width: 178px;
+               margin-left: 5px;
+               font-weight: bold;
+               text-align: center;
+            }
+
+        .menu-web{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 150px;
+            background-color: black;
+            box-shadow: 0 0 5px rgb(0, 0, 0);
+        }
+
+            .menu-ul{
+                display: flex;
+                align-items: center;
+                width: 450px;
+                font-size: 18px;
+                margin-left: 500px;
+            }
+
+            .menu-ul-comprimido{
+                display: none;
+                width: 46px;
+                height: 46px;
+                align-self: center;
+            }
+
+            .menu-ul-comprimido span{
+                width: 50px;
+                height: 50px;
+                font-size: 36px;
+                color: rgb(236, 236, 212);
+                font-family: 'WebSymbolsRegular';
+                text-align: center;
+            }
+
+                .menu-ul-comprimido:hover span{
+                    cursor: pointer;
+                    color: rgb(243, 146, 55);
+                    transition: 0.3s;
+                }
+
+            .menu-ul a{
+                text-decoration: none;
+                color: rgb(236, 236, 212);
+                font-size: 20px;
+            }
+
+            .menu-ul a li{
+                list-style: none;
+                text-align: center;
+                border-radius: 2px;
+                padding: 10px 20px 10px 20px;
+            }
+
+            .menu-ul a:hover li{
+                /*background-color: rgb(243, 146, 55);*/
+                color: rgb(243, 146, 55);
+                transition: 200ms ease-in-out;
+            }
+
+        .contenedor-item-presentacion{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+            min-height: 600px;
+            align-self: baseline;
+        }
+
+            .foto{
+                width: 375px;
+                height: 375px;
+                background-image: url('yo.png');
+                background-position: center;
+                background-size: cover;
+                border: 1px solid rgb(199, 199, 199);
+                box-shadow: 0 0 30px rgb(75, 75, 75);
+                border-radius: 999px;
+                margin: 80px 50px 80px 50px;
+            }
+
+            .cubre-foto{
+                width: 375px;
+                height: 375px;
+                background-color: gray;
+                opacity: 0.3;
+                border: 1px solid rgb(94, 94, 94);
+                border-radius: 999px;
+            }
+
+            .titulo{
+                margin: 130px 0 0 50px;
+                font-weight: normal;
+            }
+
+                .nombre-hr{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 320px;
+                    text-align: center;
+                    justify-content: center;
+                }
+                    .nombre{
+                        font-size: 42px;
+                        margin-bottom: -8px;
+                    }
+                    
+                    .nombre-hr hr{
+                        background-color: rgb(236, 236, 212);
+                        color: rgb(236, 236, 212);
+                        width: 20%;
+                        height: 2px;
+                        margin-top: 5px;
+                        border: none;
+                        box-shadow: 0px 4px 5px black;
+                    }
+
+                .desarrollador{
+                    width: 320px;
+                    color: rgb(236, 236, 212);
+                    text-shadow: 0 0 1px black;
+                    font-size: 30px;
+                    text-align: center;
+                    margin-top: 3px;
+                }
+
+                .titulo p{
+                    font-size: 20px;
+                    color: rgb(94, 94, 94);
+                }
+
+                .titulo p:first-of-type{
+                    margin-top: 60px;
+                }
+
+            .boton-conoceme{
+                width: 150px;
+                font-size: 20px;
+                padding: 12px;
+                background-color: rgb(236, 236, 212);
+                color: rgb(31, 31, 31);
+                margin-top: 15px;
+                border: 1px solid rgb(94, 94, 94);
+                border-radius: 2px;
+            }
+
+            .boton-conoceme:hover{
+                cursor: pointer;
+                background-color: black;        
+                color: rgb(236, 236, 212);
+                border: 1px solid rgb(199, 199, 199);
+                transition: 100ms ease-in-out;
+            }
+
+        .contenedor-item-academico{
+            width: 100%;
+            min-height: 600px;
+            background-color: rgb(236, 236, 212);
+        }    
+
+            .item-academico{
+                display: flex;
+                flex-wrap: wrap;
+                width: 1200px;
+                min-height: 500px;
+                align-self: baseline;
+                margin: 0 auto;
+            }
+
+                .titulo-academico{
+                    width: 100%;
+                    height: 80px;
+                    margin-top: 80px;
+                }
+
+                    .titulo-academico h1{
+                        color: rgb(243, 146, 55);
+                        font-size: 80px;
+                        text-align: left;
+                    }
+
+                .linea-tiempo{
+                    display: flex;
+                    width: 100%;
+                    min-height: 300px;
+                    margin-top: 40px;
+                    color: black;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                    .linea-tiempo hr{
+                        position: absolute;
+                        width: 1000px;
+                    }
+
+                    .formacion-item{
+                        display: flex;
+                        z-index: 2;
+                        margin-top: 30px;
+                    }
+                    
+                        .circulo, .circulo-2{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 150px;
+                            height: 150px;
+                            color: rgb(236, 236, 212);
+                            border: 3px solid black;
+                            background-color: rgb(243, 146, 55);
+                            border-radius: 999px;
+                            box-shadow: 0 0 20px black;
+                            margin: 0 30px 25px 0;
+                        }
+
+                        .circulo-2{                            
+                            color: rgb(243, 146, 55);
+                            border: 3px solid rgb(243, 146, 55);
+                            background-color: black;
+                            box-shadow: 0 0 20px rgb(243, 146, 55);
+                        }
+
+                        .formacion-item:last-of-type .circulo-2{
+                            margin-right: 0px;
+                        }
+
+                        .parrafo-1997{
+                            display: none;
+                            flex-wrap: wrap;
+                            width: 50%;
+                            height: 75px;
+                            font-size: 30px;
+                            margin: 10px 0 0 30px;
+                        }
+
+                        .parrafo-1997:nth-child(even){
+                            width: 35%;
+                        }
+
+                            .parrafo-1997 p{
+                                height: 30px;
+                            }
+
+                            .parrafo-1997 p:first-of-type{
+                                color: rgb(97, 158, 97);
+                                margin-right: 10px;
+                            }
+
+                            .contiene-logo-lasalle{
+                                width: 100%;
+                            }
+
+                                .logo-lasalle{
+                                    width: 175px;
+                                    height: 70px;
+                                    margin-left: 40px;
+                                    background-image: url('lasalle.png');
+                                    background-size: cover;
+                                }
+
+        .mis-proyectos{
+            width: 100%;
+            min-height: 600px;
+            background-color: black;
+        }
+
+            .mis-proyectos .titulo-academico h1{
+                text-align: right;
+            }
+
+        .contacto{
+            width: 100%;
+            background-color: rgb(243, 146, 55);
+        }
+
+            .contacto .item-academico h1{
+                text-align: left;
+                color: rgb(236, 236, 212);
+            }
+
+            .formulario{
+                display: flex;
+                width: 100%;
+                min-height: 100px;
+                margin-bottom: 20px;
+            }
+
+                .formulario-contacto{
+                    width: 50%;
+                    height: 100%;
+                    color: rgb(236, 236, 212);
+                }
+
+                    .formulario-contacto form{
+                        display: flex;
+                        flex-wrap: wrap;
+                        font-size: 30px;
+                    }
+                    
+                        .formulario-contacto form > div{
+                            display: flex;
+                            padding: 10px 10px 10px 0;
+                        }
+
+                            .formulario-contacto form > div input{
+                                border: none;
+                                border-radius: 5px;
+                                width: 500px;
+                                height: 50px;
+                                font-size: 24px;
+                                text-indent: 10px;
+                            }
+
+                            .formulario-contacto form > div input:focus{
+                                box-shadow: 0 0 20px black;
+                                transition: 0.1s;
+                            }
+
+                            .formulario-contacto form > div input::placeholder{                                
+                                font-size: 20px;
+                                color:rgb(243, 146, 55);
+                            }
+
+                            .formulario-contacto form > div input:focus::placeholder{                                
+                                color: black;
+                            }
+
+
+                            .formulario-contacto form > div:last-child input{                               
+                                width: 200px;
+                            }
+
+                            
+                            .formulario-contacto form > div textarea{
+                                border: none;
+                                border-radius: 5px;
+                                width: 500px;
+                                height: 200px;
+                                font-size: 24px;
+                                padding: 10px;
+                            }
+
+                                .formulario-contacto form > div textarea:focus{
+                                    box-shadow: 0 0 20px black;
+                                    transition: 0.1s;
+                                }
+
+                                .formulario-contacto form > div textarea::placeholder{
+                                    font-size: 20px;
+                                    color:rgb(243, 146, 55);
+                                }
+
+                                .formulario-contacto form > div textarea:focus::placeholder{
+                                    color: black;
+                                }
+
+                            .form-submit{
+                                width: 500px;
+                                justify-content: right;
+                                margin-left: 10px;
+                            }
+
+                            .form-submit input{
+                                background-color: rgb(236, 236, 212);
+                                color: black;
+                            }
+
+                            .form-submit input:hover{
+                                background-color: rgb(236, 236, 212);
+                                color: black;
+                                cursor: pointer;
+                                box-shadow: 0 0 10px black;
+                                transition: 0.2s;
+                            }
+
+                .redes{      
+                    display: flex;              
+                    width: 500px;
+                    height: 70px;
+                    margin-top: 40px;
+                    justify-content: right;
+                }
+
+                    .contenedor-redes{
+                        display: flex;
+                        width: 40px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                        .contenedor-redes > div{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 999px;
+                            box-shadow: 0 0 2px black;
+                        }
+
+                        .facebook{
+                            background-image: url('face-bn.png');
+                            background-size: cover;
+                        }
+
+                        .instagram{
+                            background-image: url('ig-bn.png');
+                            background-size: cover;
+                        }
+
+                        .whatsapp{
+                            background-image: url('wp-bn.png');
+                            background-size: cover;
+                        }
+
+
+                            .facebook:hover{
+                                cursor: pointer;
+                                width: 35px;
+                                height: 35px;
+                                background-image: url('face-color.png');
+                                background-size: cover;
+                                transition: 0.3s;
+                            }
+
+                            .instagram:hover{
+                                cursor: pointer;
+                                width: 35px;
+                                height: 35px;
+                                background-image: url('ig-color.png');
+                                background-size: cover;
+                                transition: 0.3s;
+                            }
+
+                            .whatsapp:hover{
+                                cursor: pointer;
+                                width: 35px;
+                                height: 35px;
+                                background-image: url('wp-color.png');
+                                background-size: cover;
+                                transition: 0.3s;
+                            }
+              
+                            
+/* MEDIA QUERY's 1240*/
+
+@media (max-width: 1240px){
+
+    .contenedor-item-presentacion{
+        justify-content: center;
+    }
+
+    .menu-ul{
+        display: flex;
+        align-items: center;
+        width: 450px;
+        font-size: 18px;
+        margin-left: 150px;
+    }
+
+    .foto{
+        margin-left: 0px;
+    }
+
+    .titulo p{
+        width: 330px;
+    }
+
+    .titulo-academico h1{
+        text-align: center;
+    }
+
+    .item-academico{
+        width: 600px;
+    }
+
+    .linea-tiempo hr{
+        position: absolute;
+        width: 700px;
+    }
+
+    .circulo{
+        width: 110px;
+        height: 110px;
+        margin: 0 30px 25px 0;
+        font-size: 10px;
+    }
+
+    .circulo-2{
+        width: 110px;
+        height: 110px;
+        margin: 0 30px 25px 0;
+        font-size: 10px;
+    }
+
+    .item-academico{
+        justify-content: center;
+    }
+
+    .mis-proyectos .titulo-academico h1{
+        text-align: center;
+    }
+
+    .contacto .titulo-academico h1{
+        text-align: center;
+    }
+
+    .formulario-contacto{
+        width: 100%;        
+    }
+
+    .formulario-contacto form{
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+
+/* MEDIA QUERY's 870*/
+
+@media (max-width: 870px){
+
+    .menu-web{
+        justify-content: space-between;
+    }
+
+    .logo{
+        margin-left: 30px;
+    }
+
+    .logo p{
+        font-size: 36px;
+        height: 30px;
+        line-height: 35px;
+    }
+
+    .logo p:nth-child(2){
+        width: 130px;
+    }
+
+    .menu-ul{
+        display: none;
+    }
+    
+    .menu-ul-comprimido{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 30px;
+    }
+
+    .menu-ul-comprimido span{
+        height: 8px;
+        line-height: 8px;
+        align-self: flex-start;
+    }
+
+    .menu-ul-comprimido span:first-of-type{
+        
+        margin-top: -6px;
+    }
+
+    .foto{
+        width: 200px;
+        height: 200px;
+        margin: 50px auto 0px;
+    }
+
+        .cubre-foto{
+            width: 200px;
+            height: 200px;
+        }
+
+    .titulo{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0px auto 20px;
+    }
+
+        .titulo *{
+            width: 100%;
+        }
+
+        .titulo hr{
+            width: 64px;
+        }
+
+        .titulo div:nth-of-type(2){
+            display: flex;
+            justify-content: center;
+        }
+
+        .nombre{
+            font-size: 24px;
+        }
+
+        .desarrollador{
+            font-size: 20px;
+        }
+
+        .titulo p:first-of-type{
+            font-size: 16px;
+            width: 180px;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .boton-conoceme{
+            width: 200px;
+        }
+
+        .item-academico{
+           width: 200px;
+        }
+
+        .titulo-academico h1{
+            font-size: 50px;
+            width: 100%;
+        }
+
+        .contenedor-item-academico .item-academico .linea-tiempo{
+            flex-direction: column;
+            min-height: 700px;
+        }
+
+        .linea-tiempo hr{
+            display: none;
+        }
+
+        .linea-tiempo .circulo, .linea-tiempo .circulo-2{
+            margin: 0 auto;
+            width: 110px;
+            height: 110px;
+        }
+
+        .item-academico .linea-tiempo > div{
+            width: 110px;
+            height: 110px;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+        }
+
+        .redes{
+            width: 100%;
+            height: 50px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .formulario-contacto form > div{
+            width: 100%;
+            margin: 0 auto;
+            padding: 5px 0px 5px;
+        }
+
+        .formulario-contacto form > div input{
+            width: 100%;
+            height: 30px;
+            font-size: 16px;
+        }
+
+        .formulario-contacto form > div textarea{
+            width: 100%;
+            font-size: 16px;
+        }
+}
